@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&family=Open+Sans:wght@300&family=Roboto:ital,wght@1,300&family=Rock+Salt&family=Signika:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Rock+Salt&display=swap');
 /* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
 html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
@@ -16,6 +17,7 @@ body {
     margin: 0;
     background-color: #1b4513;
     font-family: 'Rock Salt', 'roboto',sans-serif;
+    font-family: 'Libre Baskerville', 'roboto',sans-serif;
 }
 .grid{
     display: grid;
@@ -40,6 +42,7 @@ header {
     background-color: rgb(9, 112, 98);
 display: grid;
 grid-template-columns: 75px auto;
+text-align: center;
 color: rgb(242, 242, 242);
 text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
 
@@ -68,8 +71,9 @@ header h2 {margin: 0; font-weight: normal;}
     color: #fff;
 }
 nav {
-    background-color: #666;
+    background-color: rgb(104, 63, 63);
 }
+
 nav button {
     margin: 0 2vw;
     background-color: transparent;
@@ -90,7 +94,7 @@ nav ul li a {
     color: #eee;
     padding: .5rem 0;
     text-decoration: none;
-    font-size: .9rem;
+    font-size: 20px;
     text-align: center;
     border-top: 1px solid black;
 }
@@ -318,13 +322,27 @@ background-color: #a3ffff;
     90% { transform: translate(1px, 2px) rotate(0deg); }
     100% { transform: translate(1px, -2px) rotate(-1deg); }
   }
-  .mapouter{position:relative;text-align:right;height:500px;width:600px;}
-  .gmap_canvas {overflow:hidden;
-    background:none!important;
+  .mapouter{position:relative;
+    text-align:right;
     height:500px;
     width:600px;}
+  .gmap_canvas {overflow:hidden;
+    background:none;
+    height:500px;
+    width:600px;
+}
+#mapframe{
+    width:600px; 
+    height:500px;
+    border: none;
+    
+}
     form{
         color: #a3ffff;
+    }
+    .h {
+        color: white;
+        text-shadow: 2px 2px 2px black, 0 0 25px rgb(0 255 220), 0 0 5px rgb(0 30 7);
     }
   input[type=text], select {
     width: 100%;
