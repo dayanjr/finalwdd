@@ -369,7 +369,7 @@ main {
 
 
 .grid-container>div {
-    background-color: rgba(215, 224, 133, 0.8);
+    background-color: rgb(244 244 244 / 90%);
     text-align: center;
     
 }
